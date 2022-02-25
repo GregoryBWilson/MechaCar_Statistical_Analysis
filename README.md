@@ -74,7 +74,7 @@ The t-values quantify the difference between the population means and the corres
 
   To answer this question, linear regression tests the following hypotheses:
 
-  **Null Hypothesis H~0~:**  The slope of the linear model is zero, or m = 0
+  **Null Hypothesis H<sub>0<sub>:**  The slope of the linear model is zero, or m = 0
 
   **Alternate Hypotheses H~a~:**  The slope of the linear model is not zero, or m ≠ 0
 
