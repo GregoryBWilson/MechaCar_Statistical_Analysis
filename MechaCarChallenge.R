@@ -2,11 +2,8 @@
 # Use the library() function to load the dplyr package.
 library(dplyr)
 
-# library(jsonlite)
-# library(tidyverse)
-
-getwd()
-setwd("C:/Users/Greg/Carleton/MechaCar_Statistical_Analysis")
+getwd() # What working directory am I in?
+setwd("C:/Users/Greg/Carleton/MechaCar_Statistical_Analysis") # Set your working directory
 
 # Import and read in the MechaCar_mpg.csv file as a dataframe.
 MechCar_MPG <- read.csv('MechaCar_mpg.csv',stringsAsFactors = F) #read in the dataset
@@ -17,7 +14,7 @@ head(MechCar_MPG)
 lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechCar_MPG) #generate multiple linear regression model
 
 # Using the summary() function, determine the p-value and the r-squared value for the linear regression model.
-summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechCar_MPG)) # summarize multiple linear model)
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechCar_MPG)) # summarize multiple linear model
 
 # Summary Statistics on Suspension Coils
 # In your MechaCarChallenge.RScript, import and read in the Suspension_Coil.csv file as a table.
