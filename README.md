@@ -58,9 +58,9 @@ The t-values quantify the difference between the population means and the corres
 
   We need to determine if we can reject the Null Hypothesis in favour of the Alternate Hypothesis.
 
-  **Null Hypothesis H~0~:** μ1 = μ2 (the variable has no apparent affect on the outcome)
+  **Null Hypothesis H<sub>0</sub>:** μ1 = μ2 (the variable has no apparent affect on the outcome)
 
-  **Alternate Hypotheses H~a~:** μ1 ≠ μ2 (the variable has sufficient evidence of an affect on the outcome)
+  **Alternate Hypotheses H<sub>a</sub>:** μ1 ≠ μ2 (the variable has sufficient evidence of an affect on the outcome)
 
   It the test above the following variables/coefficients by virtual of their p-value exceeding 0.05 that we fail to reject the null hypothesis.
 
@@ -74,15 +74,15 @@ The t-values quantify the difference between the population means and the corres
 
   To answer this question, linear regression tests the following hypotheses:
 
-  **Null Hypothesis H<sub>0<sub>:**  The slope of the linear model is zero, or m = 0
+  **Null Hypothesis H<sub>0</sub>:**  The slope of the linear model is zero, or m = 0
 
-  **Alternate Hypotheses H~a~:**  The slope of the linear model is not zero, or m ≠ 0
+  **Alternate Hypotheses H<sub>a</sub>:**  The slope of the linear model is not zero, or m ≠ 0
 
   If there is no significant linear relationship, each dependent value would be determined by random chance and error. Therefore, our linear model would be a flat line with a slope of 0.
 
-  The r-squared (r^2^) value is also known as the coefficient of determination and represents how well the regression model approximates real-world data points. In most cases, the r-squared value will range between 0 and 1 and can be used as a probability metric to determine the likelihood that future data points will fit the linear model.
+  The r-squared (r<sup>2</sup>) value is also known as the coefficient of determination and represents how well the regression model approximates real-world data points. In most cases, the r-squared value will range between 0 and 1 and can be used as a probability metric to determine the likelihood that future data points will fit the linear model.
 
-  With a significant r-squared (adjusted) value of 0.6825 their is evidence that the slope is non-zero, this is further supported by the fact the a p-value of 5.35e^-11^ is essentially zero indicating that this correlation is not likely to be by chance.
+  With a significant r-squared (adjusted) value of 0.6825 their is evidence that the slope is non-zero, this is further supported by the fact the a p-value of 5.35e<sup>-11</sup> is essentially zero indicating that this correlation is not likely to be by chance.
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
