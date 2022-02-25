@@ -53,3 +53,6 @@ coil_lot3 <- coil_table %>% filter(Manufacturing_Lot=="Lot3") #select only data 
 coil_lot3_PSI <- coil_lot3%>% select( c('PSI'))
 t.test(coil_lot3_PSI,coil_pop_PSI$Mean) #compare sample versus population means
 
+t.test(coil_lot1_PSI,mu = 1500) #compare sample versus specification of 1500 PSI
+t.test(coil_lot2_PSI,mu = 1500) #compare sample versus specification of 1500 PSI
+t.test(coil_lot3_PSI,mu = 1500) #compare sample versus specification of 1500 PSI
