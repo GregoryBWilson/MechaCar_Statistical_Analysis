@@ -4,7 +4,7 @@
 
 ## 1 Introduction
 
-An program was written in R to conduct a statistical analysis of data provided by MechaCar to determine performance of various protypye models they are designing.  
+A program was written in R to conduct a statistical analysis of data provided by MechaCar to determine performance of various protypye car models they were designing.  
 
 The results are discussed in sections:
 
@@ -12,13 +12,13 @@ The results are discussed in sections:
 - 2.2 Summary Statistics on Suspension Coils
 - 2.3 T-Tests on Suspension Coils
 
-The summary section aslo includes a recommended study design that can be found in section "3.1 Study Design: MechaCar vs Competition"
+The summary section also includes a recommended study design that can be found in section 3.1 Study Design: MechaCar vs Competition.
 
 ## 2 Results
 
 ### 2.1 Linear Regression to Predict MPG
 
-The follow tasks were undertaken to predict MPG via Linear Regression.
+The following tasks were undertaken to predict MPG via Linear Regression.
 
 A csv file was imported and read into a dataframe as follows. 
 
@@ -66,7 +66,7 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 ```
 
-The t-values quantify the difference between the population means and the corresponding p-values of each coefficient ( i.e. "Pr(>|t|)" ) is the probability of obtaining a t-value with an absolute value at least as large as the one observed in the sample data if the null hypothesis is actually true.
+The t-values quantify the difference between the population means and the corresponding p-values of each coefficient, ( i.e. "Pr(>|t|)" ) is the probability of obtaining a t-value with an absolute value at least as large as the one observed in the sample data, if the null hypothesis is actually true.
 
 In summary addressing the three questions that MechaCar had in regards to MPG are answered bleow.
 
@@ -130,7 +130,7 @@ summarize_coil_lot <- coil_table %>% group_by(Manufacturing_Lot) %>% summarize(M
 
 ***Figure 1 - Summarized Coil Population***
 
-A summary the addressed the design specification requirement for all the manufacturing lots and the three lots.
+A summary that addresses the design specification requirement for all the manufacturing lots and the three lots is shown below.
 
 ```R
 coil_lot1 <- coil_table %>% filter(Manufacturing_Lot=="Lot1") #select only data points where the Manufacturing_Lot is lot1
@@ -148,7 +148,7 @@ coil_lot3_PSI <- coil_lot3%>% select( c('PSI'))
 
 ***Figure 2 - Summarized Coil Lots***
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. The results of the analysis indicate that lot 3 with a variance of over 170 PSI does not meet the specifications.
+The design specifications for the MechaCar suspension coils dictates that the variance of the suspension coils must not exceed 100 pounds per square inch. The results of the analysis indicates that lot 3, with a variance of over 170 PSI, does not meet the specifications.
 
 ### 2.3 T-Tests on Suspension Coils
 
@@ -234,7 +234,7 @@ t.test(coil_lot2_PSI,mu = 1500)
 t.test(coil_lot3_PSI,mu = 1500) 
 ```
 
-The results of the test are essentially the same, but look for instance at the p-value results and the alternate hypothesis. 
+The results of the test are essentially the same but look, for instance, at the p-value results and the alternate hypothesis. 
 
 ```R
 > t.test(coil_lot1_PSI,mu = 1500) #compare sample versus specification of 1500 PSI
@@ -285,15 +285,15 @@ mean of x
 
 ## 3.0 Summary
 
-In section 3.1 below is a recommendation for further investigation by MechaCar, we believe that should MechaCar to valid that assertion that theirs vehicle provide the best fuel economy per pound of vehicle weight they will be able to secure a huge market share in all vehicle classes.
+In section 3.1 below is a recommendation for further investigation by MechaCar. We believe that MechaCar should try to validate their assertion that their vehicle provides the best fuel economy per pound of vehicle weight.  If they can do this, they will then be able to secure a huge market share in all vehicle classes.
 
 ### 3.1 Study Design: MechaCar vs Competition
 
-With the rising cost of gas, fuel economy is important however, comfort, road safety and load carrying capacity are also highly desirable - especially for young families.  Total vehicle weight is often a good measurement indicating the size of the vehicle, additional materials used for safety and comfort and total carrying capacity.  MechaCar asserts, due to their superior aeodynamic design features,  that their vehicles provide the best fuel economy per pound of vehilce.  Below is a test that can be run to test the idea. 
+With the rising cost of gas, fuel economy is important, however, comfort, road safety and load carrying capacity are also highly desirable - especially for young families.  Total vehicle weight is often a good measurement indicating the size of the vehicle, additional materials used for safety and comfort and total carrying capacity.  MechaCar asserts, due to their superior aeodynamic design features,  that their vehicles provide the best fuel economy per pound of vehilce.  Below is a test that can be run to test the idea. 
 
 #### 3.1.1 Metric to be Tested
 
-To test MechaCar's declaration the metric that will be tested is overall fuel economy in mpg.
+To test MechaCar's declaration, the metric that will be tested is overall fuel economy in mpg.
 
 #### 3.1.2 Null or Alternative Hypothesis 
 
@@ -303,11 +303,11 @@ To test MechaCar's declaration the metric that will be tested is overall fuel ec
 
 #### 3.1.3 Statistical test to Test the Hypothesis. 
 
-You would run a t-test of all cars using vehicle weight on the x axis and fuel economy on the y axis to create a overall statistical model of as a baseline population.  Next you would extract the MechaCar prototypes to create a sample which you would then run against the population.  Do this for all competitors of interest would then allow MechCar to "reject the Null Hypothesis" one competitor at a time. 
+You would run a t-test of all cars using vehicle weight on the x axis and fuel economy on the y axis to create a overall statistical model as a baseline population.  Next, you would extract the MechaCar prototypes to create a sample which you would then run against the population.  Doing this for all competitors of interest would then allow MechCar to "reject the Null Hypothesis" one competitor at a time. 
 
 #### 3.1.4 Data Required for the Statistical Test
 
-We would need to gather overall mpg and vehicle weight data of all MechaCar prototypes, as well as from all major competitor vehicles.
+We would need to gather overall mpg and vehicle weight data of all MechaCar prototypes, as well as, from all major competitor vehicles.
 
 ## 
 
